@@ -31,8 +31,7 @@ p, input, li, table, label {
 font[size="7"] {
   font-size: 4rem;
   text-align: center;
-  color: white;
-  text-shadow: 2px 2px 10px black;
+  color: black;
 }
 
 font[size="6"] {
