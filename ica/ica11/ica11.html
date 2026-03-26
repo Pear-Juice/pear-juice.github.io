@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StoryGen</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+  <script src="ica11.js" defer></script> 
+<style>
+
+    @media (max-width: 100ch) {
+      body {
+        background: #18191c;
+        color: #c7d1ed;
+        width: auto;
+        margin: 0 auto;
+        font-family: "erode", "serif";
+      }
+
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+    
+    h1 {
+      text-align: center;
+      font-family: "satoshi", "sans-serif";
+      color: white;
+      font-size: 40px;
+    }
+
+    h2 {
+      font-family: "satoshi", "sans-serif";
+      color: white;
+      font-size: 28px;
+    }
+
+    h3 {
+      font-family: "satoshi", "sans-serif";
+      color: white;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    body {
+      background: #18191c;
+      color: #c7d1ed;
+      max-width: 80ch;
+      margin: 0 auto;
+    }
+
+    nav {
+      background-color: #1b1d21;
+      height: 50px;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 30px;
+      display: flex;
+
+      font-family: "satoshi", "sans-serif";
+    }
+    
+    nav > ul {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav > ul li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline;
+
+      align-content: center;
+    }
+
+    nav > ul > li > a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    section {
+      background-color: #1b1d21;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 30px;
+      border: 2px solid rgb(53,45,145);
+    }
+
+    img {
+      max-width: 400px;
+      border-radius: 20px;
+    }
+
+    .content-box {
+      border-bottom: 4px solid #18191c;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    
+  </style>
+</head>
+  <body>
+    <div class="content-box">
+      <div>
+        <label for="custom-name">Enter custom name:</label>
+        <input id="custom-name" type="text" placeholder="" />
+      </div>
+      <fieldset>
+        <legend>Choose locale:</legend>
+        <label for="us">US</label
+        ><input id="us" type="radio" name="uk-us" value="us" checked />
+        <label for="uk">UK</label
+        ><input id="uk" type="radio" name="uk-us" value="uk" />
+      </fieldset>
+      <div>
+        <button class="generate">Generate random story</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+<p class="story"></p>
