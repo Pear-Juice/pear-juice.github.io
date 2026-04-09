@@ -64,7 +64,27 @@ class Ball {
         const distance = Math.sqrt(dx * dx + dy * dy);
 
         if (distance < this.size + ball.size) {
-          ball.color = this.color = randomRGB();
+          const normalX = dx / distance;
+          const normalY = dy / distance;
+
+          const deltaVX = this.velX - ball.velX;
+          const deltaVY = this.velY - ball.velY;
+
+          const velocityAlongNormal = deltaVX * normalX + deltaVY * normalY;
+        
+          if (velocityAlongNormal <= 0) {
+            const newVelocity = -velocityAlongNormal;
+
+            const impulseX = newVelocity * normalX;
+            const impulseY = newVelocity * normalY;
+
+            this.velX += impulseX;
+            this.velY += impulseY;
+            ball.velX -= impulseX;
+            ball.velY -= impulseY; 
+
+            ball.color = this.color = randomRGB();
+          }
         }
       }
     }
