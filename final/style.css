@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Author', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 20px;
+  height: 120px
+}
+
+progress {
+  width: 30%;
+  border: 4px solid black;
+  height: 40px;
+}
+
+canvas {
+  margin: 5px;
+}
+
+.memorySlotEmpty {
+  float: left;
+  width: 0px;
+  height: 50px;
+  border: 2px solid black;
+  margin: 4px;
+}
+
+.memorySlot {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 4px solid black;
+  margin: 4px;
+  
+  font-size: 30px;
+
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;
+}
