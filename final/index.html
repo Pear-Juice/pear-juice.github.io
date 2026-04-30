@@ -11,16 +11,25 @@
 </head>
 <body>
   <h1>Wheels of Volume</h1>
-  <progress id="Volume" value="0" max="100"></progress>
-  <ul id="Memory"></ul>
+  <details>
+    <summary>Click to set Volume</summary>
+    
+    <div class="wheels">
+      <div class="volumeGroup">
+        <aside id="VolumeNumber">0</aside>
+        <progress id="Volume" value="0" max="100"></progress>
+      </div>
+      <ul id="Memory"></ul>
 
-  <div>
-    <canvas id="NumberWheel" width="300" height="300"></canvas>
-    <canvas id="MemoryWheel" width="300" height="300"></canvas>
-    <canvas id="OperationWheel" width="300" height="300"></canvas>
-    <canvas id="DisasterWheel" width="300" height="300"></canvas>
-    <canvas id="FinalWheel" width="300" height="300"></canvas>
-  </div>
-  <script src="main.js"></script>
+      <div>
+        <canvas id="NumberWheel" width="300" height="300"></canvas>
+        <canvas id="MemoryWheel" width="300" height="300"></canvas>
+        <canvas id="OperationWheel" width="300" height="300"></canvas>
+        <canvas id="DisasterWheel" width="300" height="300"></canvas>
+        <canvas id="FinalWheel" width="300" height="300"></canvas>
+      </div>
+    </div>
+  </details>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -340,7 +340,9 @@ function evilFunc() {
 
 function setVolume(num) {
   let volumeElement = document.getElementById("Volume")
+  let volumeNumberElement = document.getElementById("VolumeNumber")
   volumeElement.value = num 
+  volumeNumberElement.textContent = num
 }
 
 let numberWheel = new Wheel("NumberWheel", numberLabels, colors, onNumberSelect)
